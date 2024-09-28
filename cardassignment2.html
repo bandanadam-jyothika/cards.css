@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"  href="reactcard.css">
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+        <body>
+            <script>
+                var imgReactElement = React.createElement("img",{src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmD5WaKCOvR4wXBtHCc7R1X4He1hrmBvsL9g&s"});
+                var div1ReactElement = React.createElement("div",null,imgReactElement);
+
+                var h1ReactElement = React.createElement("h1",null,"Jr NTR");
+                var pReactElement = React.createElement("p",null,"Nandamuri Taraka Rama Rao jr(born 20 may 1983).Filmfare Awards.nandi awards.two siima awards.");
+                var buttonReactElement = React.createElement("button",{id:"nutton"},"profile");
+                var div2ReactElement = React.createElement("div",null,[h1ReactElement,pReactElement,buttonReactElement]);
+
+
+                var mainDiv = React.createElement("div",{id:"main"},[ div1ReactElement,div2ReactElement]);
+                ReactDOM.render(mainDiv,document.querySelector("body"));
+
+
+
+            </script>
+        </body>
+    </head>
+</html>
